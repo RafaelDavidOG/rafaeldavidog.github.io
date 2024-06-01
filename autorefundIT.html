@@ -215,17 +215,21 @@
 		];
 
 
+
+
+        
+
         embedded_svc.init(
-			'https://ott-it--rafa.sandbox.my.salesforce.com',
-			'https://ott-it--rafa.sandbox.my.salesforce-sites.com/',
+			'https://ott-it--rafa2.sandbox.my.salesforce.com',
+			'https://ott-it--rafa2.sandbox.my.salesforce-sites.com/',
 			gslbBaseURL,
-			'00D1x000000LZfr',
+			'00D7Y000000GCZK',
 			'LWC_Bot_Snap_in',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la3-c1cs-fra.salesforceliveagent.com/content',
 				deploymentId: '5727Q0000004mX4',
 				buttonId: '5737Q0000005E9x',
-				baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la3-c1cs-fra.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I7Q000000PYErUAO_18a22bf02af',
 				isOfflineSupportEnabled: false
 			}
@@ -234,7 +238,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://ott-it--rafa.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://ott-it--rafa2.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
